@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 05</title>
+</head>
+</head>
+<body>
+    <div style="text-align:center">
+    <form action="/handle_post"method="POST">
+    <label for="firstName">Name</label>
+    <input type="text" name="name" id ="firstName"><br>
+    <label for="age">Age </label>
+    <input type="text" name="age" id="age"><br>
+      <fieldset>
+          <legend>Majors</legend>
+    <label class="major">Major</label><br>
+     <label>Western ComputerScience</label>
+        <input type="radio" name="major"><br>
+        <label>CU Computer Science</label>
+        <input type="radio" name="major">
+      </fieldset>
+        <br>
+
+        <select name="language">
+            <option value="Python">Python</option>
+            <option value="c++">C++</option>
+            <option value="java">Java</option>
+            <option value="c">C</option>
+            <option value="Perl">Perl</option>
+        </select><br>
+        <label>Credits (0 ,3...18)</label>
+        <input type="range" step="3" min="0" max="18"value="0" list="steplist" name="credits">
+        <datalist id="steplist">
+            <option>0</option>
+            <option>3</option>
+             <option>6</option>
+            <option>9</option>
+            <option>12</option>
+            <option>15</option>
+            <option>18</option>
+            </datalist>
+        <br>
+        <input type="submit">
+    </form>
+</div>
+</body>
+</html>
